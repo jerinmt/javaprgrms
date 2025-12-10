@@ -28,7 +28,6 @@ public class AttendanceSystem {
 		}
 		input.close();
 		//Displaying the mark-list
-		String message;
 		for(int i = 0; i < numberOfStudents; i++) {
 			if(marks[i]<35) {
 				System.out.println((i+1)+") "+names[i]+" - "+marks[i]+" : Needs improvement");
