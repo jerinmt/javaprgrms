@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class AttendanceSystem {
 	//function to return average
-	public static float getAvg(int[] list, int num) {
-		int total = 0;
+	public static double getAvg(int[] list, int num) {
+		double total = 0d;
 		for(int i = 0; i < num; i++) {
 			total += list[i];
 		}
-		return total/num;
+		double avg = total/num;
+		return avg;
 	}
 	
 	public static void main(String[] args) {
@@ -36,7 +37,7 @@ public class AttendanceSystem {
 			}
 		}
 		//Display the average marks
-		float average = getAvg(marks, numberOfStudents);
+		double average = getAvg(marks, numberOfStudents);
 		System.out.println("Average marks of "+numberOfStudents+" students is "+average);
 	}
 	
